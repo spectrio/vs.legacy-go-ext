@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# Copyright 2015 VS Networks LLC, All Rights Reserved.
+# VS Networks CONFIDENTIAL
+#
+# Update go-ext repo to match Godep file.
+# NOTE: This deletes existing files in the go-ext directory
+#       and replaces them with what is specified in the Godeps
+#       file. If you manually modify the pkg, bin or src 
+#       directories, those changes will be lost after running
+#       this tool.
+#
+# Usage:
+#
+#    cd <go-ext dir>; ./tools/update
+#
+
+set -e
+
+if [[ ! -e Godeps || ! -e tools/update ]]; then
+    echo "Must be run from go-ext directory" >&2
+    exit 1
+fi
+
+rm -rf bin pkg src
+
+./tools/gpm
+
+echo -e "\nSuccess\n"

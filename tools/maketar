@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+# Copyright 2015 VS Networks LLC, All Rights Reserved.
+# VS Networks CONFIDENTIAL
+#
+# Create tarfile of go-ext directory with a random name.
+#
+# Usage:
+#
+#    ./tools/maketar
+
+set -e
+
+if [[ ! -e tools/maketar ]]; then
+    echo "The scripts expects to be run in the go-ext directory"
+    exit 1
+fi
+
+RANDHEX=$(hexdump -n 16 -v -e '/1 "%02X"' -e '/16 "\n"' /dev/urandom)
+tar cfJ "/tmp/goext-${RANDHEX}.tar.xz" --exclude="*.tar.gz" .
+mv "/tmp/goext-${RANDHEX}.tar.xz" "./goext-${RANDHEX}.tar.xz"
+
+echo -e "\ngoext-${RANDHEX}.tar.xz\n"

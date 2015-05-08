@@ -1,2 +1,0 @@
-gom 'github.com/mattn/go-runewidth', :commit => '8adae32de8a26f36cc7acaa53051407d514bb5f0'
-gom 'github.com/nsf/termbox-go', :commit => '9e7f2135126fcf13f331e7b24f5d66fd8e8e1690'

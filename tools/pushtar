@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# Copyright 2015 VS Networks LLC, All Rights Reserved.
+# VS Networks CONFIDENTIAL
+#
+#  Upload a go-ext tarball created with maketar.sh to files.vs-networks.com
+#
+#  Usage:
+#
+#    pushtar.sh <filename>
+
+set -e
+
+if [[ -z "${1}" ]]; then
+    echo "Usage: pushtar.sh <filename>" >&2
+    exit 1
+fi
+
+rsync --progress "${1}" root@files.vs-networks.com:/nas/web/internal/goext
+
+echo -e "\nSuccess\n"
