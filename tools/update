@@ -24,6 +24,6 @@ fi
 
 rm -rf bin pkg src
 
-./tools/gpm
+GOPATH=$(pwd) ./tools/gpm
 
 echo -e "\nSuccess\n"
