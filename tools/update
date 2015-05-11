@@ -17,7 +17,7 @@
 
 set -e
 
-if [[ ! -e Godeps || ! -e tools/update ]]; then
+if [ ! -e Godeps ] || [ ! -e tools/update ]; then
     echo "Must be run from go-ext directory" >&2
     exit 1
 fi

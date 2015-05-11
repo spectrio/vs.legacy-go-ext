@@ -11,8 +11,8 @@
 
 set -e
 
-if [[ -z "${1}" ]]; then
-    echo "Usage: pushtar.sh <filename>" >&2
+if [ -z "${1}" ]; then
+    echo "Usage: pushtar <filename>" >&2
     exit 1
 fi
 
