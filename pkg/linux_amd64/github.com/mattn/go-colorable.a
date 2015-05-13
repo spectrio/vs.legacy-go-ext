@@ -1,6 +1,6 @@
 !<arch>
-__.PKGDEF       0           0     0     644     11524     `
-go object linux amd64 go1.4.2 X:precisestack
+__.PKGDEF       0           0     0     644     11526     `
+go object linux amd64 go1.3.3 X:precisestack
 
 $$
 package colorable
@@ -39,7 +39,7 @@ package colorable
 	func (@"time".mÂ·2 @"time".Month) String () (? string) { return @"time".months[@"time".mÂ·2 - @"time".Month(0x1)] }
 	type @"time".Weekday int
 	func (@"time".dÂ·2 @"time".Weekday) String () (? string) { return @"time".days[@"time".dÂ·2] }
-	type @"time".Time struct { @"time".sec int64; @"time".nsec int32; @"time".loc *@"time".Location }
+	type @"time".Time struct { @"time".sec int64; @"time".nsec uintptr; @"time".loc *@"time".Location }
 	func (@"time".tÂ·2 @"time".Time "esc:0x2") Add (@"time".dÂ·3 @"time".Duration) (? @"time".Time)
 	func (@"time".tÂ·2 @"time".Time "esc:0x2") AddDate (@"time".yearsÂ·3 int, @"time".monthsÂ·4 int, @"time".daysÂ·5 int) (? @"time".Time)
 	func (@"time".tÂ·2 @"time".Time "esc:0x0") After (@"time".uÂ·3 @"time".Time "esc:0x0") (? bool) { return @"time".tÂ·2.@"time".sec > @"time".uÂ·3.@"time".sec || @"time".tÂ·2.@"time".sec == @"time".uÂ·3.@"time".sec && @"time".tÂ·2.@"time".nsec > @"time".uÂ·3.@"time".nsec }
@@ -115,16 +115,17 @@ package colorable
 	var @"time".UTC *@"time".Location
 
 $$
-_go_.6          0           0     0     644     3114      `
-go object linux amd64 go1.4.2 X:precisestack
+_go_.6          0           0     0     644     3122      `
+go object linux amd64 go1.3.3 X:precisestack
 
 !
-  go13ldio.aos.a ş*"".NewColorableStdout  €  şdH‹%    H;awè    ëêHƒì HÇD$(    HÇD$0    H‹    1íH9ètH‹    H‰\$0H‰D$(HƒÄ ÃH    H‰$H    H‰\$H    H‰\$è    H‹D$ë»
-         0runtime.morestack_noctxt   ^  4go.itab.*os.File.io.Writer   z  os.Stdout   ¦  type.*os.File   ¼  type.io.Writer   Ô  4go.itab.*os.File.io.Writer   è   runtime.typ2Itab    @  "".~r0  type.io.Writer @5?@0 € 
-,T 
- s TgclocalsÂ·d64e51a4c4bfeaa840e480961ec6b0b3 TgclocalsÂ·3280bececceccd33cb74587feedb1f9f    /home/danw/projects/go-ext/src/github.com/mattn/go-colorable/colorable_others.goş*"".NewColorableStderr  €  şdH‹%    H;awè    ëêHƒì HÇD$(    HÇD$0    H‹    1íH9ètH‹    H‰\$0H‰D$(HƒÄ ÃH    H‰$H    H‰\$H    H‰\$è    H‹D$ë»
-         0runtime.morestack_noctxt   ^  4go.itab.*os.File.io.Writer   z  os.Stderr   ¦  type.*os.File   ¼  type.io.Writer   Ô  4go.itab.*os.File.io.Writer   è   runtime.typ2Itab    @  "".~r0  type.io.Writer @5?@0 € 
-,T 
- s TgclocalsÂ·d64e51a4c4bfeaa840e480961ec6b0b3 TgclocalsÂ·3280bececceccd33cb74587feedb1f9f    /home/danw/projects/go-ext/src/github.com/mattn/go-colorable/colorable_others.goş"".init     dH‹%    H;awè    ëê¶    €û t¶    €ûuÃè    Æ    è    è    Æ    Ã
-         0runtime.morestack_noctxt   2  "".initdoneÂ·   J  "".initdoneÂ·   `  "runtime.throwinit   p "".initdoneÂ·   |  os.init   †  io.init   ’ "".initdoneÂ·        P P "P 
- /! TgclocalsÂ·3280bececceccd33cb74587feedb1f9f TgclocalsÂ·3280bececceccd33cb74587feedb1f9f    /home/danw/projects/go-ext/src/github.com/mattn/go-colorable/colorable_others.goş,4go.itab.*os.File.io.Writer     şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·d64e51a4c4bfeaa840e480961ec6b0b3              şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·d64e51a4c4bfeaa840e480961ec6b0b3              şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           ş,"".initdoneÂ·  type.uint8   ş0"".NewColorableStdoutÂ·f              *"".NewColorableStdout   ş&runtime.typ2ItabÂ·f               runtime.typ2Itab   ş,runtime.throwreturnÂ·f              &runtime.throwreturn   ş0"".NewColorableStderrÂ·f              *"".NewColorableStderr   ş"".initÂ·f              "".init   ş(runtime.throwinitÂ·f              "runtime.throwinit   şos.initÂ·f              os.init   şio.initÂ·f              io.init   ş&go.string."runtime" 0  0               runtime    &go.string."runtime"   ş,go.importpath.runtime.                       &go.string."runtime"   şgo.string."io" 0  &               io    go.string."io"   ş"go.importpath.io.                       go.string."io"   şgo.string."os" 0  &               os    go.string."os"   ş"go.importpath.os.                       go.string."os"   ş"runtime.zerovalue      ÿÿgo13ld
+  go13ldio.aos.a ş*"".NewColorableStdout  €  ğdH‹%    H;!wè    ëëHƒì HÇD$(    HÇD$0    H‹%    H1íH9ètH‹%    H‰\$0H‰D$(HƒÄ ÃHÇ$    HÇD$    HÇD$    è    H‹D$ëÃ
+        4runtime.morestack16_noctxt   ^  4go.itab.*os.File.io.Writer   ~  os.Stdout   ¬  type.*os.File   ¾  type.io.Writer   Ğ  4go.itab.*os.File.io.Writer   Ú   runtime.typ2Itab    @  "".~r0  type.io.Writer @8?@. € 
++U  lBA 
+ l     TgclocalsÂ·d64e51a4c4bfeaa840e480961ec6b0b3 TgclocalsÂ·3280bececceccd33cb74587feedb1f9f     Œ/projects/go-ext/src/github.com/mattn/go-colorable/colorable_others.goş*"".NewColorableStderr  €  ğdH‹%    H;!wè    ëëHƒì HÇD$(    HÇD$0    H‹%    H1íH9ètH‹%    H‰\$0H‰D$(HƒÄ ÃHÇ$    HÇD$    HÇD$    è    H‹D$ëÃ
+        4runtime.morestack16_noctxt   ^  4go.itab.*os.File.io.Writer   ~  os.Stderr   ¬  type.*os.File   ¾  type.io.Writer   Ğ  4go.itab.*os.File.io.Writer   Ú   runtime.typ2Itab    @  "".~r0  type.io.Writer @8?@. € 
++U  lBA 
+ l     TgclocalsÂ·d64e51a4c4bfeaa840e480961ec6b0b3 TgclocalsÂ·3280bececceccd33cb74587feedb1f9f     Œ/projects/go-ext/src/github.com/mattn/go-colorable/colorable_others.goş"".init  À  ¨dH‹%    H;!wè    ëëH¶%    €û tH¶%    €ûuÃè    Æ%    è    è    Æ%    Ã
+        4runtime.morestack00_noctxt   4  "".initdoneÂ·   P  "".initdoneÂ·   f  "runtime.throwinit   x  "".initdoneÂ·   „  os.init     io.init   œ  "".initdoneÂ·        ` ` "` 
+ 2. 
+ 2.     TgclocalsÂ·3280bececceccd33cb74587feedb1f9f TgclocalsÂ·3280bececceccd33cb74587feedb1f9f     Œ/projects/go-ext/src/github.com/mattn/go-colorable/colorable_others.goş*4go.itab.*os.File.io.Writer     şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·d64e51a4c4bfeaa840e480961ec6b0b3              şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·d64e51a4c4bfeaa840e480961ec6b0b3              şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           şTgclocalsÂ·3280bececceccd33cb74587feedb1f9f           ş,"".initdoneÂ·  type.uint8   ş0"".NewColorableStdoutÂ·f              *"".NewColorableStdout   ş&runtime.typ2ItabÂ·f               runtime.typ2Itab   ş,runtime.throwreturnÂ·f              &runtime.throwreturn   ş0"".NewColorableStderrÂ·f              *"".NewColorableStderr   ş"".initÂ·f              "".init   ş(runtime.throwinitÂ·f              "runtime.throwinit   şos.initÂ·f              os.init   şio.initÂ·f              io.init   ş&go.string."runtime" 0  0               runtime    &go.string."runtime"   ş,go.importpath.runtime.                       &go.string."runtime"   şgo.string."io" 0  &               io    go.string."io"   ş"go.importpath.io.                       go.string."io"   şgo.string."os" 0  &               os    go.string."os"   ş"go.importpath.os.                       go.string."os"   ş"runtime.zerovalue      ÿÿgo13ld
