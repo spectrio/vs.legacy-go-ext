@@ -15,10 +15,17 @@
 #    cd <go-ext dir>; ./tools/update
 #
 
+GO_VERSION="go version go1.4.2 linux/amd64"
+
 set -e
 
 if [ ! -e Godeps ] || [ ! -e tools/update ]; then
     echo "Must be run from go-ext directory" >&2
+    exit 1
+fi
+
+if [ "$GO_VERSION" != "$(go version)" ]; then
+    echo "Must be running $GO_VERSION"
     exit 1
 fi
 
