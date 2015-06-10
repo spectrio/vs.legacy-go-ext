@@ -1,7 +1,10 @@
-github.com/nsf/termbox-go bc836fdbcf75184c95c96500ea740e3dd727b5a8
-github.com/boltdb/bolt da700e8fdb065b7e073700c9afa8369d4c60c674
-github.com/jbarham/go-cdb 206e6dfad0523345b5f1bf488913e5d871a886be
-github.com/inconshreveable/log15 352fceb48e895bd1dd0b9f5d3ae8f8516c49af0f
-github.com/lib/pq a8d8d01c4f91602f876bf5aa210274e8203a6b45
-github.com/julienschmidt/httprouter 8c199fb6259ffc1af525cc3ad52ee60ba8359669
-github.com/satori/go.uuid 7c7f2020c4c9491594b85767967f4619c2fa75f9
+github.com/nsf/termbox-go                   bc836fdbcf75184c95c96500ea740e3dd727b5a8
+github.com/boltdb/bolt                      da700e8fdb065b7e073700c9afa8369d4c60c674
+github.com/jbarham/go-cdb                   206e6dfad0523345b5f1bf488913e5d871a886be
+github.com/inconshreveable/log15            352fceb48e895bd1dd0b9f5d3ae8f8516c49af0f
+github.com/lib/pq                           a8d8d01c4f91602f876bf5aa210274e8203a6b45
+github.com/julienschmidt/httprouter         8c199fb6259ffc1af525cc3ad52ee60ba8359669
+github.com/satori/go.uuid                   7c7f2020c4c9491594b85767967f4619c2fa75f9
+github.com/golang/protobuf/proto            efd7476481382c195beb33acd8ec2f1527167fb4
+github.com/golang/protobuf/protoc-gen-go    efd7476481382c195beb33acd8ec2f1527167fb4
+gopkg.in/yaml.v2
