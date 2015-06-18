@@ -9,3 +9,5 @@ github.com/golang/protobuf/proto            efd7476481382c195beb33acd8ec2f152716
 github.com/golang/protobuf/protoc-gen-go    efd7476481382c195beb33acd8ec2f1527167fb4
 gopkg.in/yaml.v2
 gopkg.in/gomail.v1
+github.com/zenazn/goji                      d198bcf1ddf7d69872b506da7d4c4862121a9d8a
+github.com/zenazn/goji/web                  eaa649ab77fd613bb3d44dde6b4e6043a01eee66
