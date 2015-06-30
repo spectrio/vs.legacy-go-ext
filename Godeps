@@ -9,3 +9,4 @@ github.com/golang/protobuf/proto            efd7476481382c195beb33acd8ec2f152716
 github.com/golang/protobuf/protoc-gen-go    efd7476481382c195beb33acd8ec2f1527167fb4
 gopkg.in/yaml.v2
 gopkg.in/gomail.v1
+github.com/kennygrant/sanitize              bf9c39a678d8e26aeee60d5fe733cad47a7a6871
